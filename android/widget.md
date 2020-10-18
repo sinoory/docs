@@ -23,3 +23,5 @@ getTopFadingEdgeStrength() 决定是否有顶部阴影 (return 0 就是否 retur
 getBottomFadingEdgeStrength() 决定是否有底部阴影
 getLeftFadingEdgeStrength() 决定是否有左边阴影
 getRightFadingEdgeStrength()决定是否有右边阴影
+
+ok
