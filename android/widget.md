@@ -41,14 +41,14 @@ canvas.setDrawFilter(new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG|Paint.FIL
 三 PorterDuffXfermode
 https://github.com/LT5505/SliderLayout
 
- 2     protected void dispatchDraw(Canvas canvas) {
- 3         Paint paint = new Paint();
- 4         paint.setAntiAlias(true);
- 5         paint.setColor(Color.WHITE);
- 6         int saveCount = canvas.saveLayer(0, 0, getWidth(), getHeight(), null, Canvas.ALL_SAVE_FLAG);
- 7         super.dispatchDraw(canvas);
- 8         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.MULTIPLY));
- 9         canvas.drawPath(clipPath, paint);
-10         canvas.restoreToCount(saveCount);
-11         paint.setXfermode(null);
-12     }
+      protected void dispatchDraw(Canvas canvas) {
+          Paint paint = new Paint();
+          paint.setAntiAlias(true);
+          paint.setColor(Color.WHITE);
+          int saveCount = canvas.saveLayer(0, 0, getWidth(), getHeight(), null, Canvas.ALL_SAVE_FLAG);
+          super.dispatchDraw(canvas);
+          paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.MULTIPLY));
+          canvas.drawPath(clipPath, paint);
+         canvas.restoreToCount(saveCount);
+         paint.setXfermode(null);
+     }
