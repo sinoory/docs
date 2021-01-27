@@ -1,3 +1,6 @@
+# usefull link
+https://github.com/GcsSloop/AndroidNote/tree/master
+
 # fading
 ## 设置颜色
 https://blog.csdn.net/u012702547/article/details/52913538
